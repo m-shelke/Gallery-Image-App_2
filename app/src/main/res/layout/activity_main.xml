@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,16 +15,19 @@
         android:text="Cloud Storage"
         android:textStyle="bold"
         android:textSize="35dp"
+        android:layout_marginTop="20dp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:gravity="center"
         android:layout_gravity="center"/>
+
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="350dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="5dp"
+        android:background="@color/white"
         android:layout_margin="15dp"
         app:cardPreventCornerOverlap="true"
         app:cardUseCompatPadding="true"
@@ -43,12 +47,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="2"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cameraCardView"
             android:layout_width="wrap_content"
-            android:layout_height="140dp"
+            android:layout_height="160dp"
             android:layout_margin="15dp"
             app:cardMaxElevation="15dp"
             app:cardUseCompatPadding="true"
@@ -57,7 +62,9 @@
             app:cardCornerRadius="12dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:background="@color/white"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
@@ -73,7 +80,60 @@
                     android:layout_height="1dp"
                     android:background="@color/black"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:text="Camera"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"/>
 
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/galleryCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="15dp"
+            app:cardMaxElevation="15dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/baseline_cloud_upload_24"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:text="Gallery"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"/>
 
             </LinearLayout>
 
